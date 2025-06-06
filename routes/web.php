@@ -12,6 +12,18 @@ Route::get('/about', [HomeController::class, 'about']);
 Route::get('/single-action', SingleActionController::class); 
 //Route::resource('/blog', BlogController::class); 
 
+// Fait le jeudi avec vous: Query Builder (générateur de requête)
+Route::get('/update-user', [HomeController::class, 'updateUser']);
+Route::get('/delete-user', [HomeController::class, 'deleteUserByIdUser']);
+Route::get('/delete-multiple-users', [HomeController::class, 'deleteUsersGreaterThanOne']);
+
+// Jai ajouté cette partie: Query Builder (générateur de requête) 
+
+Route::get('/blog-titles', [HomeController::class, 'getTitles']);
+Route::get('/test-aggregates', [HomeController::class, 'testAggregates']);
+Route::get('/test-aggregatesView', [HomeController::class, 'testAggregatesView']);
+
+
 
 
 
